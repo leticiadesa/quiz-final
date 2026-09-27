@@ -1,0 +1,17 @@
+CREATE DATABASE quiz_belieber;
+
+USE quiz_belieber;
+
+CREATE TABLE resultados (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    idade INT NOT NULL,
+    sexo VARCHAR(30) NOT NULL,
+    pontos INT NOT NULL,
+    total_questoes INT NOT NULL,
+    resultado VARCHAR(200) NOT NULL,
+    data_resultado DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+SELECT * FROM resultados;
